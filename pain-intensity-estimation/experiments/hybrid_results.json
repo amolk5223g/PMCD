@@ -1,0 +1,904 @@
+{
+  "model": "Hybrid_MM_Gated_XGB",
+  "formula": "0.70 * MM_Gated (deep waveforms) + 0.30 * XGBoost (88 engineered features)",
+  "validation": "5-Fold GroupKFold (strictly out-of-fold, identical participant splits)",
+  "metrics": {
+    "mae": 17.5722,
+    "rmse": 21.5422,
+    "pearson_r": 0.486,
+    "pearson_p": 2.827e-85,
+    "ccc": 0.4003,
+    "r2": 0.2323,
+    "n_samples": 1424,
+    "uncertainty": {
+      "mean_std": 22.9294,
+      "picp_95": 0.9565,
+      "mpiw_95": 89.8833,
+      "error_uncertainty_spearman": 0.0779
+    }
+  },
+  "participant_metrics": [
+    {
+      "mae": 22.3938,
+      "rmse": 26.3948,
+      "pearson_r": 0.266,
+      "pearson_p": 0.1988,
+      "ccc": 0.1155,
+      "r2": -0.9301,
+      "n_samples": 25,
+      "uncertainty": {
+        "mean_std": 30.8525,
+        "picp_95": 1.0,
+        "mpiw_95": 120.9417,
+        "error_uncertainty_spearman": -0.0592
+      },
+      "participant_id": "P01",
+      "true_mean": 65.2,
+      "pred_mean": 46.61
+    },
+    {
+      "mae": 22.3909,
+      "rmse": 25.9383,
+      "pearson_r": 0.0544,
+      "pearson_p": 0.7457,
+      "ccc": 0.0193,
+      "r2": -2.2689,
+      "n_samples": 38,
+      "uncertainty": {
+        "mean_std": 28.5179,
+        "picp_95": 0.9737,
+        "mpiw_95": 111.7903,
+        "error_uncertainty_spearman": 0.036
+      },
+      "participant_id": "P02",
+      "true_mean": 56.84,
+      "pred_mean": 36.64
+    },
+    {
+      "mae": 17.0899,
+      "rmse": 19.8401,
+      "pearson_r": 0.5044,
+      "pearson_p": 1.576e-05,
+      "ccc": 0.3072,
+      "r2": -1.6477,
+      "n_samples": 66,
+      "uncertainty": {
+        "mean_std": 21.9997,
+        "picp_95": 0.9545,
+        "mpiw_95": 86.2387,
+        "error_uncertainty_spearman": -0.0091
+      },
+      "participant_id": "P03",
+      "true_mean": 72.42,
+      "pred_mean": 57.66
+    },
+    {
+      "mae": 20.0981,
+      "rmse": 23.026,
+      "pearson_r": 0.2368,
+      "pearson_p": 0.3772,
+      "ccc": 0.1838,
+      "r2": -0.0129,
+      "n_samples": 16,
+      "uncertainty": {
+        "mean_std": 25.8292,
+        "picp_95": 0.9375,
+        "mpiw_95": 101.2506,
+        "error_uncertainty_spearman": -0.1441
+      },
+      "participant_id": "P04",
+      "true_mean": 46.25,
+      "pred_mean": 48.42
+    },
+    {
+      "mae": 12.7009,
+      "rmse": 15.2266,
+      "pearson_r": 0.7025,
+      "pearson_p": 4.412e-05,
+      "ccc": 0.57,
+      "r2": 0.4019,
+      "n_samples": 27,
+      "uncertainty": {
+        "mean_std": 21.0623,
+        "picp_95": 1.0,
+        "mpiw_95": 82.5642,
+        "error_uncertainty_spearman": 0.1123
+      },
+      "participant_id": "P05",
+      "true_mean": 38.89,
+      "pred_mean": 44.19
+    },
+    {
+      "mae": 25.6475,
+      "rmse": 29.3847,
+      "pearson_r": 0.573,
+      "pearson_p": 9.029e-05,
+      "ccc": 0.3026,
+      "r2": -0.4377,
+      "n_samples": 41,
+      "uncertainty": {
+        "mean_std": 20.5462,
+        "picp_95": 0.8049,
+        "mpiw_95": 80.5412,
+        "error_uncertainty_spearman": 0.1348
+      },
+      "participant_id": "P06",
+      "true_mean": 74.88,
+      "pred_mean": 53.44
+    },
+    {
+      "mae": 16.7962,
+      "rmse": 20.666,
+      "pearson_r": 0.4785,
+      "pearson_p": 0.009999,
+      "ccc": 0.3694,
+      "r2": -0.048,
+      "n_samples": 28,
+      "uncertainty": {
+        "mean_std": 23.3979,
+        "picp_95": 0.9286,
+        "mpiw_95": 91.7197,
+        "error_uncertainty_spearman": -0.0788
+      },
+      "participant_id": "P07",
+      "true_mean": 58.21,
+      "pred_mean": 48.11
+    },
+    {
+      "mae": 13.0063,
+      "rmse": 15.4601,
+      "pearson_r": 0.2523,
+      "pearson_p": 0.1953,
+      "ccc": 0.1162,
+      "r2": 0.0531,
+      "n_samples": 28,
+      "uncertainty": {
+        "mean_std": 16.0032,
+        "picp_95": 0.9643,
+        "mpiw_95": 62.7324,
+        "error_uncertainty_spearman": -0.0088
+      },
+      "participant_id": "P08",
+      "true_mean": 36.07,
+      "pred_mean": 37.7
+    },
+    {
+      "mae": 14.4309,
+      "rmse": 16.566,
+      "pearson_r": 0.68,
+      "pearson_p": 0.0001846,
+      "ccc": 0.3658,
+      "r2": -0.1862,
+      "n_samples": 25,
+      "uncertainty": {
+        "mean_std": 22.6865,
+        "picp_95": 1.0,
+        "mpiw_95": 88.9312,
+        "error_uncertainty_spearman": -0.02
+      },
+      "participant_id": "P09",
+      "true_mean": 80.8,
+      "pred_mean": 68.85
+    },
+    {
+      "mae": 13.2951,
+      "rmse": 15.2939,
+      "pearson_r": 0.6739,
+      "pearson_p": 1.111e-07,
+      "ccc": 0.5978,
+      "r2": 0.2653,
+      "n_samples": 49,
+      "uncertainty": {
+        "mean_std": 24.5408,
+        "picp_95": 1.0,
+        "mpiw_95": 96.1998,
+        "error_uncertainty_spearman": -0.0474
+      },
+      "participant_id": "P10",
+      "true_mean": 70.0,
+      "pred_mean": 62.64
+    },
+    {
+      "mae": 14.5237,
+      "rmse": 18.6582,
+      "pearson_r": -0.1993,
+      "pearson_p": 0.5808,
+      "ccc": -0.0953,
+      "r2": -2.3155,
+      "n_samples": 10,
+      "uncertainty": {
+        "mean_std": 24.2689,
+        "picp_95": 1.0,
+        "mpiw_95": 95.1341,
+        "error_uncertainty_spearman": 0.1394
+      },
+      "participant_id": "P11",
+      "true_mean": 35.0,
+      "pred_mean": 47.56
+    },
+    {
+      "mae": 12.2241,
+      "rmse": 14.7993,
+      "pearson_r": 0.469,
+      "pearson_p": 0.03698,
+      "ccc": 0.1599,
+      "r2": -1.014,
+      "n_samples": 20,
+      "uncertainty": {
+        "mean_std": 19.6834,
+        "picp_95": 1.0,
+        "mpiw_95": 77.1588,
+        "error_uncertainty_spearman": 0.1714
+      },
+      "participant_id": "P12",
+      "true_mean": 22.5,
+      "pred_mean": 34.07
+    },
+    {
+      "mae": 24.0129,
+      "rmse": 28.6364,
+      "pearson_r": 0.6201,
+      "pearson_p": 0.0002573,
+      "ccc": 0.2826,
+      "r2": 0.0747,
+      "n_samples": 30,
+      "uncertainty": {
+        "mean_std": 30.922,
+        "picp_95": 1.0,
+        "mpiw_95": 121.2142,
+        "error_uncertainty_spearman": 0.1039
+      },
+      "participant_id": "P13",
+      "true_mean": 52.67,
+      "pred_mean": 39.24
+    },
+    {
+      "mae": 17.4024,
+      "rmse": 22.8799,
+      "pearson_r": 0.2635,
+      "pearson_p": 0.2135,
+      "ccc": 0.1363,
+      "r2": -1.3053,
+      "n_samples": 24,
+      "uncertainty": {
+        "mean_std": 25.2575,
+        "picp_95": 0.9583,
+        "mpiw_95": 99.0094,
+        "error_uncertainty_spearman": -0.0313
+      },
+      "participant_id": "P14",
+      "true_mean": 42.5,
+      "pred_mean": 58.96
+    },
+    {
+      "mae": 9.3729,
+      "rmse": 11.1675,
+      "pearson_r": 0.3026,
+      "pearson_p": 0.1948,
+      "ccc": 0.2871,
+      "r2": -0.2629,
+      "n_samples": 20,
+      "uncertainty": {
+        "mean_std": 25.5089,
+        "picp_95": 1.0,
+        "mpiw_95": 99.9949,
+        "error_uncertainty_spearman": -0.0226
+      },
+      "participant_id": "P15",
+      "true_mean": 32.5,
+      "pred_mean": 35.04
+    },
+    {
+      "mae": 13.6738,
+      "rmse": 16.6349,
+      "pearson_r": 0.468,
+      "pearson_p": 0.004,
+      "ccc": 0.4024,
+      "r2": -0.1644,
+      "n_samples": 36,
+      "uncertainty": {
+        "mean_std": 24.6793,
+        "picp_95": 1.0,
+        "mpiw_95": 96.743,
+        "error_uncertainty_spearman": -0.4116
+      },
+      "participant_id": "P16",
+      "true_mean": 61.11,
+      "pred_mean": 53.45
+    },
+    {
+      "mae": 22.0705,
+      "rmse": 25.0155,
+      "pearson_r": 0.4192,
+      "pearson_p": 0.09397,
+      "ccc": 0.1134,
+      "r2": -10.1636,
+      "n_samples": 17,
+      "uncertainty": {
+        "mean_std": 20.4992,
+        "picp_95": 0.9412,
+        "mpiw_95": 80.3569,
+        "error_uncertainty_spearman": 0.1642
+      },
+      "participant_id": "P17",
+      "true_mean": 17.06,
+      "pred_mean": 39.13
+    },
+    {
+      "mae": 23.3838,
+      "rmse": 27.5002,
+      "pearson_r": 0.2329,
+      "pearson_p": 0.1594,
+      "ccc": 0.1273,
+      "r2": -1.7158,
+      "n_samples": 38,
+      "uncertainty": {
+        "mean_std": 22.0252,
+        "picp_95": 0.8421,
+        "mpiw_95": 86.3388,
+        "error_uncertainty_spearman": -0.3951
+      },
+      "participant_id": "P18",
+      "true_mean": 67.11,
+      "pred_mean": 47.44
+    },
+    {
+      "mae": 30.3985,
+      "rmse": 31.4426,
+      "pearson_r": 0.2349,
+      "pearson_p": 0.3481,
+      "ccc": 0.0174,
+      "r2": -40.5999,
+      "n_samples": 18,
+      "uncertainty": {
+        "mean_std": 28.7934,
+        "picp_95": 1.0,
+        "mpiw_95": 112.8702,
+        "error_uncertainty_spearman": 0.7564
+      },
+      "participant_id": "P19",
+      "true_mean": 13.89,
+      "pred_mean": 44.29
+    },
+    {
+      "mae": 16.8788,
+      "rmse": 19.4799,
+      "pearson_r": 0.5414,
+      "pearson_p": 0.004289,
+      "ccc": 0.3403,
+      "r2": 0.2285,
+      "n_samples": 26,
+      "uncertainty": {
+        "mean_std": 26.4404,
+        "picp_95": 1.0,
+        "mpiw_95": 103.6463,
+        "error_uncertainty_spearman": -0.0215
+      },
+      "participant_id": "P20",
+      "true_mean": 56.54,
+      "pred_mean": 52.43
+    },
+    {
+      "mae": 13.6242,
+      "rmse": 16.157,
+      "pearson_r": 0.3364,
+      "pearson_p": 0.1259,
+      "ccc": 0.1461,
+      "r2": -3.3122,
+      "n_samples": 22,
+      "uncertainty": {
+        "mean_std": 18.7102,
+        "picp_95": 1.0,
+        "mpiw_95": 73.3441,
+        "error_uncertainty_spearman": -0.3394
+      },
+      "participant_id": "P21",
+      "true_mean": 24.09,
+      "pred_mean": 37.22
+    },
+    {
+      "mae": 24.0262,
+      "rmse": 28.7642,
+      "pearson_r": 0.5987,
+      "pearson_p": 0.01111,
+      "ccc": 0.1586,
+      "r2": -0.2506,
+      "n_samples": 17,
+      "uncertainty": {
+        "mean_std": 23.9564,
+        "picp_95": 0.8824,
+        "mpiw_95": 93.9089,
+        "error_uncertainty_spearman": 0.1005
+      },
+      "participant_id": "P22",
+      "true_mean": 58.24,
+      "pred_mean": 41.03
+    },
+    {
+      "mae": 9.7753,
+      "rmse": 11.4616,
+      "pearson_r": 0.405,
+      "pearson_p": 0.02642,
+      "ccc": 0.2607,
+      "r2": 0.1609,
+      "n_samples": 30,
+      "uncertainty": {
+        "mean_std": 16.8683,
+        "picp_95": 1.0,
+        "mpiw_95": 66.1236,
+        "error_uncertainty_spearman": -0.0727
+      },
+      "participant_id": "P23",
+      "true_mean": 36.33,
+      "pred_mean": 36.83
+    },
+    {
+      "mae": 15.2357,
+      "rmse": 19.7662,
+      "pearson_r": 0.5549,
+      "pearson_p": 0.0002996,
+      "ccc": 0.36,
+      "r2": -0.4642,
+      "n_samples": 38,
+      "uncertainty": {
+        "mean_std": 25.7152,
+        "picp_95": 1.0,
+        "mpiw_95": 100.8037,
+        "error_uncertainty_spearman": 0.038
+      },
+      "participant_id": "P24",
+      "true_mean": 44.47,
+      "pred_mean": 58.5
+    },
+    {
+      "mae": 15.2935,
+      "rmse": 20.2472,
+      "pearson_r": 0.244,
+      "pearson_p": 0.1784,
+      "ccc": 0.1108,
+      "r2": -1.481,
+      "n_samples": 32,
+      "uncertainty": {
+        "mean_std": 25.6852,
+        "picp_95": 0.9062,
+        "mpiw_95": 100.6858,
+        "error_uncertainty_spearman": 0.2067
+      },
+      "participant_id": "P25",
+      "true_mean": 36.88,
+      "pred_mean": 52.02
+    },
+    {
+      "mae": 17.7982,
+      "rmse": 22.6799,
+      "pearson_r": 0.2043,
+      "pearson_p": 0.2463,
+      "ccc": 0.1514,
+      "r2": -0.2015,
+      "n_samples": 34,
+      "uncertainty": {
+        "mean_std": 29.352,
+        "picp_95": 1.0,
+        "mpiw_95": 115.06,
+        "error_uncertainty_spearman": -0.0582
+      },
+      "participant_id": "P26",
+      "true_mean": 37.94,
+      "pred_mean": 45.7
+    },
+    {
+      "mae": 15.7595,
+      "rmse": 17.5543,
+      "pearson_r": 0.2851,
+      "pearson_p": 0.09195,
+      "ccc": 0.2071,
+      "r2": -0.0057,
+      "n_samples": 36,
+      "uncertainty": {
+        "mean_std": 18.7283,
+        "picp_95": 1.0,
+        "mpiw_95": 73.4151,
+        "error_uncertainty_spearman": 0.2288
+      },
+      "participant_id": "P27",
+      "true_mean": 33.61,
+      "pred_mean": 37.76
+    },
+    {
+      "mae": 11.2522,
+      "rmse": 13.9466,
+      "pearson_r": 0.2922,
+      "pearson_p": 0.09896,
+      "ccc": 0.1818,
+      "r2": 0.0814,
+      "n_samples": 33,
+      "uncertainty": {
+        "mean_std": 16.4869,
+        "picp_95": 1.0,
+        "mpiw_95": 64.6285,
+        "error_uncertainty_spearman": 0.1955
+      },
+      "participant_id": "P28",
+      "true_mean": 36.06,
+      "pred_mean": 35.69
+    },
+    {
+      "mae": 15.7268,
+      "rmse": 18.2317,
+      "pearson_r": 0.1677,
+      "pearson_p": 0.3937,
+      "ccc": 0.0429,
+      "r2": -0.1218,
+      "n_samples": 28,
+      "uncertainty": {
+        "mean_std": 24.6588,
+        "picp_95": 1.0,
+        "mpiw_95": 96.6625,
+        "error_uncertainty_spearman": 0.1664
+      },
+      "participant_id": "P29",
+      "true_mean": 30.36,
+      "pred_mean": 37.02
+    },
+    {
+      "mae": 14.7761,
+      "rmse": 18.3816,
+      "pearson_r": 0.2298,
+      "pearson_p": 0.1431,
+      "ccc": 0.11,
+      "r2": -0.4972,
+      "n_samples": 42,
+      "uncertainty": {
+        "mean_std": 26.3291,
+        "picp_95": 1.0,
+        "mpiw_95": 103.2099,
+        "error_uncertainty_spearman": -0.1432
+      },
+      "participant_id": "P30",
+      "true_mean": 59.29,
+      "pred_mean": 48.45
+    },
+    {
+      "mae": 13.3627,
+      "rmse": 15.8828,
+      "pearson_r": 0.5789,
+      "pearson_p": 0.001556,
+      "ccc": 0.3877,
+      "r2": 0.1116,
+      "n_samples": 27,
+      "uncertainty": {
+        "mean_std": 17.4823,
+        "picp_95": 0.963,
+        "mpiw_95": 68.5306,
+        "error_uncertainty_spearman": -0.2082
+      },
+      "participant_id": "P31",
+      "true_mean": 48.89,
+      "pred_mean": 41.08
+    },
+    {
+      "mae": 30.6227,
+      "rmse": 36.4168,
+      "pearson_r": 0.2275,
+      "pearson_p": 0.112,
+      "ccc": 0.0933,
+      "r2": -1.6129,
+      "n_samples": 50,
+      "uncertainty": {
+        "mean_std": 19.9089,
+        "picp_95": 0.66,
+        "mpiw_95": 78.0427,
+        "error_uncertainty_spearman": 0.0242
+      },
+      "participant_id": "P32",
+      "true_mean": 73.8,
+      "pred_mean": 45.91
+    },
+    {
+      "mae": 20.4672,
+      "rmse": 22.7407,
+      "pearson_r": 0.5752,
+      "pearson_p": 0.1051,
+      "ccc": 0.1746,
+      "r2": -0.0069,
+      "n_samples": 9,
+      "uncertainty": {
+        "mean_std": 24.0772,
+        "picp_95": 1.0,
+        "mpiw_95": 94.3828,
+        "error_uncertainty_spearman": -0.1667
+      },
+      "participant_id": "P33",
+      "true_mean": 34.44,
+      "pred_mean": 44.21
+    },
+    {
+      "mae": 17.2214,
+      "rmse": 18.8988,
+      "pearson_r": -0.0764,
+      "pearson_p": 0.7631,
+      "ccc": -0.0069,
+      "r2": -5.6891,
+      "n_samples": 18,
+      "uncertainty": {
+        "mean_std": 24.6833,
+        "picp_95": 1.0,
+        "mpiw_95": 96.7584,
+        "error_uncertainty_spearman": -0.2466
+      },
+      "participant_id": "P34",
+      "true_mean": 17.22,
+      "pred_mean": 34.44
+    },
+    {
+      "mae": 18.0231,
+      "rmse": 20.9317,
+      "pearson_r": 0.2665,
+      "pearson_p": 0.03057,
+      "ccc": 0.207,
+      "r2": -0.1892,
+      "n_samples": 66,
+      "uncertainty": {
+        "mean_std": 29.9075,
+        "picp_95": 1.0,
+        "mpiw_95": 117.2375,
+        "error_uncertainty_spearman": -0.083
+      },
+      "participant_id": "P35",
+      "true_mean": 41.67,
+      "pred_mean": 49.35
+    },
+    {
+      "mae": 22.1459,
+      "rmse": 22.9989,
+      "pearson_r": -0.0924,
+      "pearson_p": 0.7152,
+      "ccc": -0.0061,
+      "r2": -25.366,
+      "n_samples": 18,
+      "uncertainty": {
+        "mean_std": 19.3611,
+        "picp_95": 1.0,
+        "mpiw_95": 75.8954,
+        "error_uncertainty_spearman": 0.0217
+      },
+      "participant_id": "P36",
+      "true_mean": 12.78,
+      "pred_mean": 34.92
+    },
+    {
+      "mae": 23.5096,
+      "rmse": 25.8426,
+      "pearson_r": 0.0905,
+      "pearson_p": 0.6406,
+      "ccc": 0.0405,
+      "r2": -0.5803,
+      "n_samples": 29,
+      "uncertainty": {
+        "mean_std": 20.3193,
+        "picp_95": 1.0,
+        "mpiw_95": 79.6515,
+        "error_uncertainty_spearman": 0.2433
+      },
+      "participant_id": "P37",
+      "true_mean": 26.55,
+      "pred_mean": 41.25
+    },
+    {
+      "mae": 8.731,
+      "rmse": 10.6655,
+      "pearson_r": 0.785,
+      "pearson_p": 4.148e-05,
+      "ccc": 0.6967,
+      "r2": 0.2353,
+      "n_samples": 20,
+      "uncertainty": {
+        "mean_std": 20.1767,
+        "picp_95": 1.0,
+        "mpiw_95": 79.0925,
+        "error_uncertainty_spearman": 0.3684
+      },
+      "participant_id": "P38",
+      "true_mean": 42.5,
+      "pred_mean": 48.83
+    },
+    {
+      "mae": 11.7875,
+      "rmse": 15.2664,
+      "pearson_r": 0.3259,
+      "pearson_p": 0.1609,
+      "ccc": 0.2698,
+      "r2": 0.0478,
+      "n_samples": 20,
+      "uncertainty": {
+        "mean_std": 17.3073,
+        "picp_95": 1.0,
+        "mpiw_95": 67.8447,
+        "error_uncertainty_spearman": 0.1684
+      },
+      "participant_id": "P39",
+      "true_mean": 45.5,
+      "pred_mean": 43.74
+    },
+    {
+      "mae": 21.8584,
+      "rmse": 23.3455,
+      "pearson_r": 0.2627,
+      "pearson_p": 0.2772,
+      "ccc": 0.0376,
+      "r2": -7.7834,
+      "n_samples": 19,
+      "uncertainty": {
+        "mean_std": 21.0895,
+        "picp_95": 0.9474,
+        "mpiw_95": 82.6708,
+        "error_uncertainty_spearman": 0.1807
+      },
+      "participant_id": "P40",
+      "true_mean": 18.95,
+      "pred_mean": 40.81
+    },
+    {
+      "mae": 13.9689,
+      "rmse": 18.3929,
+      "pearson_r": -0.5004,
+      "pearson_p": 0.06841,
+      "ccc": -0.3829,
+      "r2": -2.6837,
+      "n_samples": 14,
+      "uncertainty": {
+        "mean_std": 18.692,
+        "picp_95": 1.0,
+        "mpiw_95": 73.2728,
+        "error_uncertainty_spearman": 0.5604
+      },
+      "participant_id": "P41",
+      "true_mean": 32.86,
+      "pred_mean": 40.43
+    },
+    {
+      "mae": 23.859,
+      "rmse": 28.8523,
+      "pearson_r": -0.0467,
+      "pearson_p": 0.7502,
+      "ccc": -0.0201,
+      "r2": -0.8884,
+      "n_samples": 49,
+      "uncertainty": {
+        "mean_std": 22.1597,
+        "picp_95": 0.8367,
+        "mpiw_95": 86.8662,
+        "error_uncertainty_spearman": 0.0161
+      },
+      "participant_id": "P42",
+      "true_mean": 61.43,
+      "pred_mean": 43.97
+    },
+    {
+      "mae": 14.016,
+      "rmse": 15.6623,
+      "pearson_r": 0.873,
+      "pearson_p": 4.589e-05,
+      "ccc": 0.7365,
+      "r2": 0.6566,
+      "n_samples": 14,
+      "uncertainty": {
+        "mean_std": 21.4853,
+        "picp_95": 1.0,
+        "mpiw_95": 84.2226,
+        "error_uncertainty_spearman": -0.1473
+      },
+      "participant_id": "P43",
+      "true_mean": 60.0,
+      "pred_mean": 59.16
+    },
+    {
+      "mae": 13.2618,
+      "rmse": 16.8005,
+      "pearson_r": 0.305,
+      "pearson_p": 0.1013,
+      "ccc": 0.2264,
+      "r2": -0.6485,
+      "n_samples": 30,
+      "uncertainty": {
+        "mean_std": 19.137,
+        "picp_95": 0.9,
+        "mpiw_95": 75.0171,
+        "error_uncertainty_spearman": -0.0874
+      },
+      "participant_id": "P44",
+      "true_mean": 47.67,
+      "pred_mean": 38.36
+    },
+    {
+      "mae": 17.6343,
+      "rmse": 20.6106,
+      "pearson_r": -0.1082,
+      "pearson_p": 0.469,
+      "ccc": -0.0479,
+      "r2": -0.2254,
+      "n_samples": 47,
+      "uncertainty": {
+        "mean_std": 24.3321,
+        "picp_95": 0.9787,
+        "mpiw_95": 95.382,
+        "error_uncertainty_spearman": 0.0164
+      },
+      "participant_id": "P45",
+      "true_mean": 37.45,
+      "pred_mean": 43.41
+    },
+    {
+      "mae": 9.5517,
+      "rmse": 11.7965,
+      "pearson_r": 0.2659,
+      "pearson_p": 0.1989,
+      "ccc": 0.1852,
+      "r2": -0.4893,
+      "n_samples": 25,
+      "uncertainty": {
+        "mean_std": 18.5902,
+        "picp_95": 1.0,
+        "mpiw_95": 72.8735,
+        "error_uncertainty_spearman": 0.0815
+      },
+      "participant_id": "P46",
+      "true_mean": 31.6,
+      "pred_mean": 37.88
+    },
+    {
+      "mae": 16.9822,
+      "rmse": 19.5504,
+      "pearson_r": -0.2366,
+      "pearson_p": 0.2166,
+      "ccc": -0.148,
+      "r2": -0.3517,
+      "n_samples": 29,
+      "uncertainty": {
+        "mean_std": 20.3653,
+        "picp_95": 0.931,
+        "mpiw_95": 79.8318,
+        "error_uncertainty_spearman": -0.0882
+      },
+      "participant_id": "P47",
+      "true_mean": 30.0,
+      "pred_mean": 33.44
+    },
+    {
+      "mae": 14.0528,
+      "rmse": 18.8461,
+      "pearson_r": 0.4868,
+      "pearson_p": 0.09157,
+      "ccc": 0.3846,
+      "r2": 0.096,
+      "n_samples": 13,
+      "uncertainty": {
+        "mean_std": 23.6513,
+        "picp_95": 1.0,
+        "mpiw_95": 92.7132,
+        "error_uncertainty_spearman": 0.5385
+      },
+      "participant_id": "P48",
+      "true_mean": 56.15,
+      "pred_mean": 63.36
+    },
+    {
+      "mae": 18.3748,
+      "rmse": 20.6991,
+      "pearson_r": 0.432,
+      "pearson_p": 0.01204,
+      "ccc": 0.093,
+      "r2": -2.0258,
+      "n_samples": 33,
+      "uncertainty": {
+        "mean_std": 19.1331,
+        "picp_95": 1.0,
+        "mpiw_95": 75.0017,
+        "error_uncertainty_spearman": 0.0358
+      },
+      "participant_id": "P49",
+      "true_mean": 20.91,
+      "pred_mean": 38.59
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "note": "Explanations reflect strictly the 6 physiological/biomechanical modalities present in PMPDB (BVP, EDA, Resp, Tmp, EMG, Grip). No EEG or ECG channels exist.",
+  "shap_top_25_features": [
+    {
+      "feature": "EMG_rms_ratio",
+      "modality": "EMG",
+      "mean_abs_shap": 5.7853,
+      "xgb_gain_importance": 0.10272
+    },
+    {
+      "feature": "Grip_rel_runup_z",
+      "modality": "Grip",
+      "mean_abs_shap": 2.4637,
+      "xgb_gain_importance": 0.0311
+    },
+    {
+      "feature": "EMG_wl",
+      "modality": "EMG",
+      "mean_abs_shap": 1.2357,
+      "xgb_gain_importance": 0.02433
+    },
+    {
+      "feature": "Grip_peak_rel_runup_z",
+      "modality": "Grip",
+      "mean_abs_shap": 1.0856,
+      "xgb_gain_importance": 0.01917
+    },
+    {
+      "feature": "Tmp_mean",
+      "modality": "Tmp",
+      "mean_abs_shap": 1.0685,
+      "xgb_gain_importance": 0.01438
+    },
+    {
+      "feature": "EDA_RB_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 1.0536,
+      "xgb_gain_importance": 0.01285
+    },
+    {
+      "feature": "EDA_RB_scl_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.9371,
+      "xgb_gain_importance": 0.0198
+    },
+    {
+      "feature": "EDA_E4_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 0.9241,
+      "xgb_gain_importance": 0.01373
+    },
+    {
+      "feature": "Temporal_elapsed_sec",
+      "modality": "Temporal",
+      "mean_abs_shap": 0.9023,
+      "xgb_gain_importance": 0.01526
+    },
+    {
+      "feature": "EMG_rms",
+      "modality": "EMG",
+      "mean_abs_shap": 0.8629,
+      "xgb_gain_importance": 0.01753
+    },
+    {
+      "feature": "BVP_E4_peak_amp_norm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.8247,
+      "xgb_gain_importance": 0.01031
+    },
+    {
+      "feature": "BVP_RB_cardiac_power_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.7894,
+      "xgb_gain_importance": 0.01313
+    },
+    {
+      "feature": "Grip_ptp",
+      "modality": "Grip",
+      "mean_abs_shap": 0.7449,
+      "xgb_gain_importance": 0.02533
+    },
+    {
+      "feature": "BVP_RB_peak_amp_norm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.7172,
+      "xgb_gain_importance": 0.01041
+    },
+    {
+      "feature": "EDA_E4_deriv_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.7022,
+      "xgb_gain_importance": 0.012
+    },
+    {
+      "feature": "EMG_mav",
+      "modality": "EMG",
+      "mean_abs_shap": 0.6445,
+      "xgb_gain_importance": 0.01659
+    },
+    {
+      "feature": "EDA_RB_phasic_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.6302,
+      "xgb_gain_importance": 0.00949
+    },
+    {
+      "feature": "Grip_max",
+      "modality": "Grip",
+      "mean_abs_shap": 0.6149,
+      "xgb_gain_importance": 0.01415
+    },
+    {
+      "feature": "EMG_zcr",
+      "modality": "EMG",
+      "mean_abs_shap": 0.5844,
+      "xgb_gain_importance": 0.00915
+    },
+    {
+      "feature": "BVP_RB_prv_sdnn_ms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.5747,
+      "xgb_gain_importance": 0.01228
+    },
+    {
+      "feature": "Resp_std",
+      "modality": "Resp",
+      "mean_abs_shap": 0.5688,
+      "xgb_gain_importance": 0.01304
+    },
+    {
+      "feature": "EDA_E4_scl_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.5656,
+      "xgb_gain_importance": 0.0115
+    },
+    {
+      "feature": "Tmp_rel_runup_z",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.5165,
+      "xgb_gain_importance": 0.01304
+    },
+    {
+      "feature": "BVP_E4_rms_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.5143,
+      "xgb_gain_importance": 0.00924
+    },
+    {
+      "feature": "Resp_slope",
+      "modality": "Resp",
+      "mean_abs_shap": 0.4881,
+      "xgb_gain_importance": 0.00933
+    }
+  ],
+  "shap_all_features": [
+    {
+      "feature": "EMG_rms_ratio",
+      "modality": "EMG",
+      "mean_abs_shap": 5.7853,
+      "xgb_gain_importance": 0.10272
+    },
+    {
+      "feature": "Grip_rel_runup_z",
+      "modality": "Grip",
+      "mean_abs_shap": 2.4637,
+      "xgb_gain_importance": 0.0311
+    },
+    {
+      "feature": "EMG_wl",
+      "modality": "EMG",
+      "mean_abs_shap": 1.2357,
+      "xgb_gain_importance": 0.02433
+    },
+    {
+      "feature": "Grip_peak_rel_runup_z",
+      "modality": "Grip",
+      "mean_abs_shap": 1.0856,
+      "xgb_gain_importance": 0.01917
+    },
+    {
+      "feature": "Tmp_mean",
+      "modality": "Tmp",
+      "mean_abs_shap": 1.0685,
+      "xgb_gain_importance": 0.01438
+    },
+    {
+      "feature": "EDA_RB_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 1.0536,
+      "xgb_gain_importance": 0.01285
+    },
+    {
+      "feature": "EDA_RB_scl_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.9371,
+      "xgb_gain_importance": 0.0198
+    },
+    {
+      "feature": "EDA_E4_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 0.9241,
+      "xgb_gain_importance": 0.01373
+    },
+    {
+      "feature": "Temporal_elapsed_sec",
+      "modality": "Temporal",
+      "mean_abs_shap": 0.9023,
+      "xgb_gain_importance": 0.01526
+    },
+    {
+      "feature": "EMG_rms",
+      "modality": "EMG",
+      "mean_abs_shap": 0.8629,
+      "xgb_gain_importance": 0.01753
+    },
+    {
+      "feature": "BVP_E4_peak_amp_norm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.8247,
+      "xgb_gain_importance": 0.01031
+    },
+    {
+      "feature": "BVP_RB_cardiac_power_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.7894,
+      "xgb_gain_importance": 0.01313
+    },
+    {
+      "feature": "Grip_ptp",
+      "modality": "Grip",
+      "mean_abs_shap": 0.7449,
+      "xgb_gain_importance": 0.02533
+    },
+    {
+      "feature": "BVP_RB_peak_amp_norm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.7172,
+      "xgb_gain_importance": 0.01041
+    },
+    {
+      "feature": "EDA_E4_deriv_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.7022,
+      "xgb_gain_importance": 0.012
+    },
+    {
+      "feature": "EMG_mav",
+      "modality": "EMG",
+      "mean_abs_shap": 0.6445,
+      "xgb_gain_importance": 0.01659
+    },
+    {
+      "feature": "EDA_RB_phasic_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.6302,
+      "xgb_gain_importance": 0.00949
+    },
+    {
+      "feature": "Grip_max",
+      "modality": "Grip",
+      "mean_abs_shap": 0.6149,
+      "xgb_gain_importance": 0.01415
+    },
+    {
+      "feature": "EMG_zcr",
+      "modality": "EMG",
+      "mean_abs_shap": 0.5844,
+      "xgb_gain_importance": 0.00915
+    },
+    {
+      "feature": "BVP_RB_prv_sdnn_ms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.5747,
+      "xgb_gain_importance": 0.01228
+    },
+    {
+      "feature": "Resp_std",
+      "modality": "Resp",
+      "mean_abs_shap": 0.5688,
+      "xgb_gain_importance": 0.01304
+    },
+    {
+      "feature": "EDA_E4_scl_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.5656,
+      "xgb_gain_importance": 0.0115
+    },
+    {
+      "feature": "Tmp_rel_runup_z",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.5165,
+      "xgb_gain_importance": 0.01304
+    },
+    {
+      "feature": "BVP_E4_rms_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.5143,
+      "xgb_gain_importance": 0.00924
+    },
+    {
+      "feature": "Resp_slope",
+      "modality": "Resp",
+      "mean_abs_shap": 0.4881,
+      "xgb_gain_importance": 0.00933
+    },
+    {
+      "feature": "delta_Tmp_rel_runup_c",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.4781,
+      "xgb_gain_importance": 0.00763
+    },
+    {
+      "feature": "Grip_min",
+      "modality": "Grip",
+      "mean_abs_shap": 0.4463,
+      "xgb_gain_importance": 0.01586
+    },
+    {
+      "feature": "Grip_slope",
+      "modality": "Grip",
+      "mean_abs_shap": 0.4388,
+      "xgb_gain_importance": 0.00735
+    },
+    {
+      "feature": "Resp_rms",
+      "modality": "Resp",
+      "mean_abs_shap": 0.4387,
+      "xgb_gain_importance": 0.00966
+    },
+    {
+      "feature": "BVP_RB_prv_rmssd_ms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.4315,
+      "xgb_gain_importance": 0.01067
+    },
+    {
+      "feature": "delta_EMG_rms_ratio",
+      "modality": "EMG",
+      "mean_abs_shap": 0.4267,
+      "xgb_gain_importance": 0.01375
+    },
+    {
+      "feature": "EDA_E4_phasic_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.4233,
+      "xgb_gain_importance": 0.00683
+    },
+    {
+      "feature": "EMG_peak",
+      "modality": "EMG",
+      "mean_abs_shap": 0.4102,
+      "xgb_gain_importance": 0.01959
+    },
+    {
+      "feature": "EDA_RB_scr_count",
+      "modality": "EDA",
+      "mean_abs_shap": 0.3954,
+      "xgb_gain_importance": 0.02172
+    },
+    {
+      "feature": "BVP_E4_prv_pnn50",
+      "modality": "BVP",
+      "mean_abs_shap": 0.3868,
+      "xgb_gain_importance": 0.00747
+    },
+    {
+      "feature": "BVP_E4_std",
+      "modality": "BVP",
+      "mean_abs_shap": 0.3811,
+      "xgb_gain_importance": 0.01532
+    },
+    {
+      "feature": "delta_EDA_RB_phasic_auc",
+      "modality": "EDA",
+      "mean_abs_shap": 0.3751,
+      "xgb_gain_importance": 0.00626
+    },
+    {
+      "feature": "delta_BVP_E4_pr_bpm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.364,
+      "xgb_gain_importance": 0.00529
+    },
+    {
+      "feature": "Resp_rate_bpm",
+      "modality": "Resp",
+      "mean_abs_shap": 0.3504,
+      "xgb_gain_importance": 0.00761
+    },
+    {
+      "feature": "EDA_RB_deriv_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.3333,
+      "xgb_gain_importance": 0.01073
+    },
+    {
+      "feature": "Grip_std",
+      "modality": "Grip",
+      "mean_abs_shap": 0.3085,
+      "xgb_gain_importance": 0.01395
+    },
+    {
+      "feature": "BVP_E4_pr_bpm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.3056,
+      "xgb_gain_importance": 0.0099
+    },
+    {
+      "feature": "Tmp_rel_runup_c",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.3014,
+      "xgb_gain_importance": 0.01025
+    },
+    {
+      "feature": "Resp_ptp",
+      "modality": "Resp",
+      "mean_abs_shap": 0.2895,
+      "xgb_gain_importance": 0.0118
+    },
+    {
+      "feature": "BVP_RB_pr_bpm",
+      "modality": "BVP",
+      "mean_abs_shap": 0.2868,
+      "xgb_gain_importance": 0.009
+    },
+    {
+      "feature": "BVP_E4_ptp",
+      "modality": "BVP",
+      "mean_abs_shap": 0.2864,
+      "xgb_gain_importance": 0.00975
+    },
+    {
+      "feature": "EDA_E4_scl_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.2795,
+      "xgb_gain_importance": 0.01358
+    },
+    {
+      "feature": "delta_EDA_E4_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 0.2695,
+      "xgb_gain_importance": 0.00908
+    },
+    {
+      "feature": "BVP_RB_prv_pnn50",
+      "modality": "BVP",
+      "mean_abs_shap": 0.2655,
+      "xgb_gain_importance": 0.00551
+    },
+    {
+      "feature": "delta_EDA_RB_scl_rel_runup",
+      "modality": "EDA",
+      "mean_abs_shap": 0.2635,
+      "xgb_gain_importance": 0.0077
+    },
+    {
+      "feature": "Grip_mean",
+      "modality": "Grip",
+      "mean_abs_shap": 0.2563,
+      "xgb_gain_importance": 0.0098
+    },
+    {
+      "feature": "BVP_E4_rms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.251,
+      "xgb_gain_importance": 0.0136
+    },
+    {
+      "feature": "BVP_E4_prv_sdnn_ms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.236,
+      "xgb_gain_importance": 0.00791
+    },
+    {
+      "feature": "Temporal_progress_ratio",
+      "modality": "Temporal",
+      "mean_abs_shap": 0.236,
+      "xgb_gain_importance": 0.00853
+    },
+    {
+      "feature": "EMG_mean_freq",
+      "modality": "EMG",
+      "mean_abs_shap": 0.2344,
+      "xgb_gain_importance": 0.00522
+    },
+    {
+      "feature": "delta_Resp_rms_ratio",
+      "modality": "Resp",
+      "mean_abs_shap": 0.2258,
+      "xgb_gain_importance": 0.00677
+    },
+    {
+      "feature": "Resp_rms_ratio",
+      "modality": "Resp",
+      "mean_abs_shap": 0.2247,
+      "xgb_gain_importance": 0.00888
+    },
+    {
+      "feature": "EDA_RB_scl_slope",
+      "modality": "EDA",
+      "mean_abs_shap": 0.2138,
+      "xgb_gain_importance": 0.00605
+    },
+    {
+      "feature": "EDA_RB_scl_delta",
+      "modality": "EDA",
+      "mean_abs_shap": 0.2094,
+      "xgb_gain_importance": 0.01018
+    },
+    {
+      "feature": "Tmp_std",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.1945,
+      "xgb_gain_importance": 0.00642
+    },
+    {
+      "feature": "BVP_E4_cardiac_power_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.1896,
+      "xgb_gain_importance": 0.00849
+    },
+    {
+      "feature": "EDA_E4_deriv_max",
+      "modality": "EDA",
+      "mean_abs_shap": 0.1744,
+      "xgb_gain_importance": 0.00801
+    },
+    {
+      "feature": "BVP_RB_std",
+      "modality": "BVP",
+      "mean_abs_shap": 0.1703,
+      "xgb_gain_importance": 0.00964
+    },
+    {
+      "feature": "Tmp_delta",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.1665,
+      "xgb_gain_importance": 0.00668
+    },
+    {
+      "feature": "Tmp_slope",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.1614,
+      "xgb_gain_importance": 0.00557
+    },
+    {
+      "feature": "EDA_E4_scl_slope",
+      "modality": "EDA",
+      "mean_abs_shap": 0.1581,
+      "xgb_gain_importance": 0.00835
+    },
+    {
+      "feature": "EDA_RB_scl_std",
+      "modality": "EDA",
+      "mean_abs_shap": 0.156,
+      "xgb_gain_importance": 0.00645
+    },
+    {
+      "feature": "EDA_RB_phasic_auc",
+      "modality": "EDA",
+      "mean_abs_shap": 0.1512,
+      "xgb_gain_importance": 0.00547
+    },
+    {
+      "feature": "EMG_iemg",
+      "modality": "EMG",
+      "mean_abs_shap": 0.1472,
+      "xgb_gain_importance": 0.01102
+    },
+    {
+      "feature": "BVP_RB_ptp",
+      "modality": "BVP",
+      "mean_abs_shap": 0.145,
+      "xgb_gain_importance": 0.01084
+    },
+    {
+      "feature": "EDA_RB_scr_amp_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.1435,
+      "xgb_gain_importance": 0.00528
+    },
+    {
+      "feature": "delta_Grip_rel_runup_z",
+      "modality": "Grip",
+      "mean_abs_shap": 0.1434,
+      "xgb_gain_importance": 0.00585
+    },
+    {
+      "feature": "Grip_delta",
+      "modality": "Grip",
+      "mean_abs_shap": 0.1342,
+      "xgb_gain_importance": 0.00589
+    },
+    {
+      "feature": "EDA_E4_phasic_auc",
+      "modality": "EDA",
+      "mean_abs_shap": 0.1308,
+      "xgb_gain_importance": 0.00652
+    },
+    {
+      "feature": "delta_BVP_RB_rms_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.1265,
+      "xgb_gain_importance": 0.00439
+    },
+    {
+      "feature": "BVP_RB_rms_ratio",
+      "modality": "BVP",
+      "mean_abs_shap": 0.125,
+      "xgb_gain_importance": 0.00686
+    },
+    {
+      "feature": "BVP_RB_rms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.1141,
+      "xgb_gain_importance": 0.01297
+    },
+    {
+      "feature": "BVP_E4_prv_rmssd_ms",
+      "modality": "BVP",
+      "mean_abs_shap": 0.11,
+      "xgb_gain_importance": 0.00622
+    },
+    {
+      "feature": "EDA_E4_scr_amp_max",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0956,
+      "xgb_gain_importance": 0.00665
+    },
+    {
+      "feature": "EDA_RB_scr_amp_max",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0947,
+      "xgb_gain_importance": 0.00709
+    },
+    {
+      "feature": "EDA_E4_scr_amp_mean",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0845,
+      "xgb_gain_importance": 0.00639
+    },
+    {
+      "feature": "Resp_mean_rel_runup",
+      "modality": "Resp",
+      "mean_abs_shap": 0.0834,
+      "xgb_gain_importance": 0.005
+    },
+    {
+      "feature": "Resp_ibi_std",
+      "modality": "Resp",
+      "mean_abs_shap": 0.0782,
+      "xgb_gain_importance": 0.00578
+    },
+    {
+      "feature": "EDA_E4_scl_delta",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0663,
+      "xgb_gain_importance": 0.00588
+    },
+    {
+      "feature": "EDA_RB_deriv_max",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0584,
+      "xgb_gain_importance": 0.00641
+    },
+    {
+      "feature": "Tmp_ptp",
+      "modality": "Tmp",
+      "mean_abs_shap": 0.0479,
+      "xgb_gain_importance": 0.00451
+    },
+    {
+      "feature": "EMG_median_freq",
+      "modality": "EMG",
+      "mean_abs_shap": 0.014,
+      "xgb_gain_importance": 0.00356
+    },
+    {
+      "feature": "EDA_E4_scr_count",
+      "modality": "EDA",
+      "mean_abs_shap": 0.0051,
+      "xgb_gain_importance": 0.00474
+    }
+  ],
+  "shap_modality_contribution_pct": {
+    "EMG": 25.68,
+    "EDA": 22.07,
+    "BVP": 18.85,
+    "Grip": 16.47,
+    "Tmp": 7.28,
+    "Resp": 6.82,
+    "Temporal": 2.83
+  },
+  "integrated_gradients_modality_pct": {
+    "BVP": 29.1,
+    "EDA": 15.14,
+    "Resp": 29.77,
+    "Tmp": 4.42,
+    "EMG": 12.46,
+    "Grip": 9.11
+  },
+  "integrated_gradients_channel_pct": {
+    "Bvp": 17.29,
+    "Eda_E4": 7.03,
+    "Tmp": 4.42,
+    "Resp": 29.77,
+    "Eda_RB": 8.1,
+    "Bvp_RB": 11.81,
+    "Emg": 12.46,
+    "Grip": 9.11
+  },
+  "neural_gate_modality_weights_pct": {
+    "BVP": 16.31,
+    "EDA": 15.78,
+    "Resp": 15.98,
+    "Tmp": 18.25,
+    "EMG": 16.81,
+    "Grip": 16.86
+  }
+}
